@@ -44,12 +44,12 @@ img{
   display: flex;
   justify-content: space-around;
   gap: 1.5rem;
-
   color: var(--green);
 }
 
 .products__header{
   border-bottom: 1px solid var(--gray-lines);
+  padding: 1.5rem 2rem;
 }
 
 .products__header div{
@@ -59,4 +59,107 @@ img{
 
 .products__info{
   text-transform: uppercase;
+}
+
+.products__grid{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card{
+  font-size: .875rem;
+  margin-bottom: 2rem;
+}
+
+.card img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card__description{
+  margin-bottom: .25rem;
+}
+
+.card__price{
+  font-size: 1rem;
+}
+
+.card__price span{
+  color: var(--green);
+}
+
+.footer{
+  border-top: 1px solid var(--gray-lines);
+  background-color: var(--gray-footer);
+}
+
+.footer__list{
+  list-style: none;
+}
+
+.footer__link{
+  margin-bottom: .75rem;
+}
+
+.footer__link a{
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.newsletter{
+  margin: 3rem 0;
+}
+
+.newsletter p{
+  font-size: .875rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.newsletter__input{
+  display: block;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter__input::placeholder{
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .5px;
+}
+
+.newsletter__button{
+  border: none;
+  background-color: var(--green);
+  color: #FFF;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons__social i{
+  color: var(--green);
+  font-size: 1.75rem;
+  margin-right: 1rem;
+}
+
+.icons__payment{
+  display: flex;
+  align-items: center;
+}
+
+.icons__payment svg{
+  margin-right: 1rem;
 }
