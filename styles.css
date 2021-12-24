@@ -16,12 +16,17 @@ html{
 }
 
 img{
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
 
+i:hover, a:hover{
+  opacity: .8;
+}
+
 .container{
-  padding: 2rem;
+  padding: 2rem 3rem;
 }
 
 .header{
@@ -65,11 +70,14 @@ img{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 2.5rem;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .card{
   font-size: .875rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .card img{
@@ -95,6 +103,15 @@ img{
   background-color: var(--gray-footer);
 }
 
+.footer__info{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__info > * {
+  width: 100%;
+}
+
 .footer__list{
   list-style: none;
 }
@@ -114,9 +131,8 @@ img{
 }
 
 .newsletter p{
-  font-size: .875rem;
   font-weight: 600;
-  margin-bottom: .5rem;
+  margin-bottom: .75rem;
 }
 
 .newsletter__input{
@@ -144,6 +160,10 @@ img{
   font-weight: 600;
 }
 
+.newsletter__button:hover{
+  opacity: .8;
+}
+
 .icons{
   display: flex;
   justify-content: space-between;
@@ -162,4 +182,94 @@ img{
 
 .icons__payment svg{
   margin-right: 1rem;
+}
+
+@media(max-width: 380px){
+  .card img{
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media(min-width: 530px){
+  .card img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .form{
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+  }
+
+  .newsletter__input{
+    width: 65%;
+    max-width: 400px;
+    margin: 0;
+  }
+
+  .newsletter__button{
+    width: 30%;
+    max-width: 160px;
+    padding: .75rem;
+  }
+}
+
+@media(min-width: 680px){
+  .header__logo i, .header__icons i{
+    font-size: 1.25rem;
+  }
+
+  .card img{
+    width: 250px;
+    height: 250px;
+  }
+
+  .footer__info{
+    flex-wrap: nowrap;
+    align-items: center;
+
+    margin-bottom: 2rem;
+  }
+
+  .icons__social i{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  .icons__payment svg{
+    margin-right: 1.5rem;
+  }
+
+  .mastercard{
+    width: 57px;
+    height: 44px;
+  }
+
+  .paypal{
+    width: 28px;
+    height: 33px;
+  }
+
+  .visa{
+    width: 57px;
+    height: 18px;
+  }
+}
+
+@media(min-width: 1100px){
+  p, a, h3{
+    font-size: 1.25rem;
+  }
+
+  .card__price{
+    font-size: 1.3rem;
+  }
+
+  .card img{
+    width: 300px;
+    height: 300px;
+  }
+
 }
